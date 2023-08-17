@@ -4,7 +4,7 @@ import Input from '../Atom/Input/Input';
 function UsernameInput({ onChange }) {
     return (
         <div>
-            <Input onChange={onChange}/>
+            <Input name={"username"} onChange={onChange}/>
         </div>
     );
 }

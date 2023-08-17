@@ -17,7 +17,14 @@ function Main(props) {
     }
 
     const handleUserInfoChange = (e) => {
+        const { name, value } = e.target;
+        console.log(e.target);
+        console.log(`name: ${name}, value: ${value}`);
 
+        setUser({
+            ...user,
+            [name]: value
+        });
     }
 
     const handleAddClick = () => {
